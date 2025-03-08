@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwbfmhl8tnkhc"]
+
+[ext_resource type="Script" uid="uid://b037ri01vy23o" path="res://server.gd" id="1_ob30c"]
+[ext_resource type="PackedScene" uid="uid://dh60lixvd8u78" path="res://common/entities/player.tscn" id="2_h8t3n"]
+
+[node name="Root" type="Node" node_paths=PackedStringArray("player1", "player2")]
+script = ExtResource("1_ob30c")
+player1 = NodePath("Player 1")
+player2 = NodePath("Player 2")
+
+[node name="Player 1" parent="." groups=["network_sync"] instance=ExtResource("2_h8t3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="Player 2" parent="." groups=["network_sync"] instance=ExtResource("2_h8t3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)

@@ -1,0 +1,5 @@
+1. Generate a PAT here: https://github.com/settings/tokens with repo read/write permissions and organization read permissions
+2. Paste it into `github_token.txt`
+
+This is required for server host to clone server repository using Git
+See `prepare.sh` shell script for details

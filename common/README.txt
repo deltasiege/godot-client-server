@@ -1,0 +1,1 @@
+Assets & addons shared between client + server go in the respective subdirectories here.

@@ -1,0 +1,3 @@
+[submodule "common/addons/delta-siege-devkit"]
+	path = common/addons/delta-siege-devkit
+	url = https://github.com/deltasiege/delta-siege-devkit.git
